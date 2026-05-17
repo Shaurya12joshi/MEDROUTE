@@ -7,71 +7,50 @@
     <link href="./src/output.css" rel="stylesheet">
 </head>
 <body class="bg-[#F8F2ED]">
+
+    <!-- NAV -->
     <nav id="navBar" class="bg-[#F5F5F4] w-full border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
             <div class="flex items-center justify-between h-16">
-
                 <div class="flex items-center gap-3 lg:gap-2">
                     <div class="bg-[#D6453A] w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 lg:w-11 lg:h-11">
-                        <svg  
-                            xmlns="http://www.w3.org/2000/svg" 
-                            width="25" 
-                            height="25" 
-                            viewBox="0 0 24 24" 
-                            fill="white"
-                        >
-                        <path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="white">
+                            <path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
                         </svg>
                     </div>
-                    <a href="" class="font-bold text-xl hover:text-[#D6453A] font-custom lg:text-4xl ">MedRoute</a>
+                    <a href="" class="font-bold text-xl hover:text-[#D6453A] font-custom lg:text-4xl">MedRoute</a>
                 </div>
-
-                <div class="hidden md:flex items-center gap-6 text-slate-600 lg:gap-10 ">
+                <div class="hidden md:flex items-center gap-6 text-slate-600 lg:gap-10">
                     <a href="" class="hover:text-[#D6453A]">Features</a>
                     <a href="" class="hover:text-[#D6453A]">How it Works</a>
                     <a href="" class="hover:text-[#D6453A]">Emergency</a>
                 </div>
-
                 <div class="flex items-center gap-3">
                     <button class="bg-[#D6453A] px-3 py-1.5 rounded-3xl text-slate-50 cursor-pointer hover:bg-[#c2483f] font-semibold hidden md:block">
                         Find Care Now
                     </button>
                     <button id="menuBtn" class="text-3xl md:hidden leading-none">☰</button>
                 </div>
-
             </div>
         </div>
     </nav>
 
+    <!-- SIDEBAR -->
     <div id="overlay" class="fixed inset-0 bg-black/30 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 z-40 md:hidden">
-
         <div id="sidebar" class="fixed top-0 right-0 h-full w-[70%] max-w-[320px] bg-[#F5F5F4] shadow-2xl translate-x-full opacity-0 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] z-50">
-
             <div class="flex flex-col gap-8 p-10">
-
-                <button id="closeBtn" class="self-end text-5xl leading-none">
-                    ×
-                </button>
-
-                <a href="" class="text-3xl font-semibold hover:text-[#D6453A] transition">
-                    Features
-                </a>
-                <a href="" class="text-3xl font-semibold hover:text-[#D6453A] transition">
-                    How it Works
-                </a>
-                <a href="" class="text-3xl font-semibold hover:text-[#D6453A] transition">
-                    Emergency
-                </a>
+                <button id="closeBtn" class="self-end text-5xl leading-none">×</button>
+                <a href="" class="text-3xl font-semibold hover:text-[#D6453A] transition">Features</a>
+                <a href="" class="text-3xl font-semibold hover:text-[#D6453A] transition">How it Works</a>
+                <a href="" class="text-3xl font-semibold hover:text-[#D6453A] transition">Emergency</a>
                 <button class="bg-[#D6453A] text-white py-3 rounded-3xl mt-6 font-semibold text-xl hover:bg-[#c2483f] transition">
                     Find Care Now
                 </button>
-
             </div>
-
         </div>
-
     </div>
 
+    <!-- BADGE -->
     <div id="headerText" class="mx-4 sm:mx-6 lg:mx-8 mt-10 max-w-max">
         <div class="bg-white rounded-3xl flex items-center gap-3 border border-black/5 py-3 px-4 shadow-sm">
             <div class="w-3 h-3 rounded-full bg-emerald-600 flex-shrink-0"></div>
@@ -79,278 +58,212 @@
         </div>
     </div>
 
-    
-
+    <!-- HERO -->
     <div class="flex flex-row lg:gap-20">
-        
+
+        <!-- LEFT COLUMN -->
         <div id="headlineText" class="flex flex-col">
-            <div class="mx-5 my-2 lg:mx-10 lg:mr-0  font-custom ">
-            <div class=" flex gap-6 flex-col text-3xl md:text-4xl lg:text-7xl  ">
-            <h1 class="font-bold">
-                Trusted healthcare,
-            </h1>
-        </div>
-            <div class=" flex gap-4 text-3xl md:text-4xl lg:text-7xl font-semibold ">
-                <em class="text-[#D84B3E]">
-                    wherever 
-                </em>
-                <h1>
-                    you travel
-                </h1>
-            </div>
-            <div class="font-sans text-sm flex items-center justify-between max-w-max p-0 text-stone-500 lg:text-2xl lg:max-w-screen-md">
-                <p>
-                    Find verified doctors, hospitals, and pharmacies near you in seconds. Built for travelers, tourists, and anyone far from home.
-                </p>
-            </div>
-        </div>
 
-        <div class="flex flex-col lg:flex-row p-5 lg:p-10 gap-3">
-            <!-- Social Proof Row -->
-        <div id="socialProof" class="inline-flex items-center gap-3 bg-white border border-black/8 rounded-full px-2 py-2 mt-1  md:hidden">
-
-            <!-- Overlapping Avatars -->
-            <div class="flex items-center">
-                <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold z-[5]">AK</div>
-                <div class="w-8 h-8 rounded-full bg-green-100 text-green-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold -ml-2.5 z-[4]">SR</div>
-                <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold -ml-2.5 z-[3]">MJ</div>
-                <div class="w-8 h-8 rounded-full bg-red-100 text-red-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold -ml-2.5 z-[2]">PL</div>
-                <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 border-2 border-white flex items-center justify-center text-[10px] font-semibold -ml-2.5 z-[1]">+9k</div>
-            </div>
-            <!-- Divider -->
-            <div class="w-px h-5 bg-black/10"></div>
-
-            <!-- Stars + Count -->
-            <div class="flex items-center gap-1.5">
-                <div class="flex gap-px text-amber-500 text-[13px]">
-                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            <!-- Headline -->
+            <div class="mx-5 my-2 lg:mx-10 lg:mr-0 font-custom">
+                <div class="flex gap-6 flex-col text-3xl md:text-4xl lg:text-7xl">
+                    <h1 class="font-bold">Trusted healthcare,</h1>
                 </div>
-                <span class="text-[13px] font-semibold text-gray-900">1,000+</span>
-                <span class="text-[13px] text-gray-500">travelers helped</span>
-            </div>
-
-        </div>
-        <div id="findDocBtn">
-            <button class="bg-[#BE332B] font-bold w-[250px] p-3 rounded-3xl text-slate-50 hover:bg-red-700 hover:-translate-y-1 hover:transition-all hover:duration-300 transition-all duration-300 shadow-md shadow-red-800 hover:shadow-red-700">
-                Find Doctor Near Me
-            </button>
-        </div>
-        <div id="learnMorebtn" class="p-1">
-            <button class="border-[#E6E6E1] w-40 border-2 p-3 rounded-3xl hover:bg-[#ffffff] hover:border-black">
-                Learn More
-            </button>
-        </div>
-        <!-- Social Proof Row -->
-        <div id="socialProof" class="inline-flex items-center gap-3 bg-white border border-black/8 rounded-full px-2 py-2 mt-1 hidden lg:flex">
-
-            <!-- Overlapping Avatars -->
-            <div class="flex items-center">
-                <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold z-[5]">AK</div>
-                <div class="w-8 h-8 rounded-full bg-green-100 text-green-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold -ml-2.5 z-[4]">SR</div>
-                <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold -ml-2.5 z-[3]">MJ</div>
-                <div class="w-8 h-8 rounded-full bg-red-100 text-red-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold -ml-2.5 z-[2]">PL</div>
-                <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 border-2 border-white flex items-center justify-center text-[10px] font-semibold -ml-2.5 z-[1]">+9k</div>
-            </div>
-            <!-- Divider -->
-            <div class="w-px h-5 bg-black/10"></div>
-
-            <!-- Stars + Count -->
-            <div class="flex items-center gap-1.5">
-                <div class="flex gap-px text-amber-500 text-[13px]">
-                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                <div class="flex gap-4 text-3xl md:text-4xl lg:text-7xl font-semibold">
+                    <em class="text-[#D84B3E]">wherever</em>
+                    <h1>you travel</h1>
                 </div>
-                <span class="text-[13px] font-semibold text-gray-900">1,000+</span>
-                <span class="text-[13px] text-gray-500">travelers helped</span>
+                <div class="font-sans text-sm text-stone-500 lg:text-2xl lg:max-w-screen-md mt-1">
+                    <p>Find verified doctors, hospitals, and pharmacies near you in seconds. Built for travelers, tourists, and anyone far from home.</p>
+                </div>
             </div>
 
-        </div>
-        </div>
+            <!-- Buttons + Testimonial column -->
+            <div class="flex flex-col p-5 lg:px-10 lg:pt-6 lg:pb-0 gap-3">
 
-        </div>
-        
-        
-        <div id="mainCard" class=" hidden lg:block lg:w-[450px] lg:bg-white lg:shadow-xl lg:rounded-t-3xl rounded-b-3xl lg:overflow-hidden ">
-            <div id="map area" class="relative h-[320px] bg-gradient-to-br from-[#E8ECEF] to-[#DDE7E2] overflow-hidden">
-                
-                <!-- RED HOSPITAL MARKER -->
-                    <div class="absolute top-48 left-20 drop-shadow-xl animate-[float_3s_ease-in-out_infinite]">
-                        
-
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="64"
-                            height="64"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                        >
-
-                        <!-- PIN -->
-                        <path
-                        d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7z"
-                        fill="#2563EB"
-                        />
-
-                        <!-- INNER CIRCLE -->
-                        <circle
-                        cx="12"
-                        cy="9"
-                        r="4"
-                        fill="white"
-                        />
-
-                        <!-- MEDICAL CROSS -->
-                        <path
-                        d="M11 7.5h2v1.5h1.5v2H13V12.5h-2V11H9.5v-2H11V7.5z"
-                        fill="#2563EB"
-                        />
-                        </svg>
+                <!-- Social proof — mobile only -->
+                <div class="inline-flex items-center gap-3 bg-white border border-black/8 rounded-full px-2 py-2 hidden md:hidden max-w-fit">
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold z-[5]">AK</div>
+                        <div class="w-8 h-8 rounded-full bg-green-100 text-green-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold -ml-2.5 z-[4]">SR</div>
+                        <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold -ml-2.5 z-[3]">MJ</div>
+                        <div class="w-8 h-8 rounded-full bg-red-100 text-red-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold -ml-2.5 z-[2]">PL</div>
+                        <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 border-2 border-white flex items-center justify-center text-[10px] font-semibold -ml-2.5 z-[1]">+9k</div>
                     </div>
-                <div class="absolute top-20 left-36 text-2xl drop-shadow-lg">
-                    📍
+                    <div class="w-px h-5 bg-black/10"></div>
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-amber-500 text-[13px]">★★★★★</span>
+                        <span class="text-[13px] font-semibold text-gray-900">1,000+</span>
+                        <span class="text-[13px] text-gray-500">travelers helped</span>
+                    </div>
                 </div>
-                <div class="absolute top-16 right-32 text-2xl drop-shadow-lg">
-                    💊
+
+                <!-- Buttons row -->
+                <div class="flex flex-row items-center gap-3 flex-wrap">
+                    <button class="bg-[#BE332B] font-bold w-[220px] p-3 rounded-3xl text-slate-50 hover:bg-red-700 hover:-translate-y-1 transition-all duration-300 shadow-md shadow-red-800">
+                        Find Doctor Near Me
+                    </button>
+                    <button class="border-[#E6E6E1] border-2 px-6 py-3 rounded-3xl hover:bg-white hover:border-black transition-all duration-200">
+                        Learn More
+                    </button>
+                    <!-- Social proof — desktop only, inline with buttons -->
+                    <div class="hidden lg:inline-flex items-center gap-3 bg-white border border-black/8 rounded-full px-2 py-2">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold z-[5]">AK</div>
+                            <div class="w-8 h-8 rounded-full bg-green-100 text-green-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold -ml-2.5 z-[4]">SR</div>
+                            <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold -ml-2.5 z-[3]">MJ</div>
+                            <div class="w-8 h-8 rounded-full bg-red-100 text-red-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold -ml-2.5 z-[2]">PL</div>
+                            <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 border-2 border-white flex items-center justify-center text-[10px] font-semibold -ml-2.5 z-[1]">+9k</div>
+                        </div>
+                        <div class="w-px h-5 bg-black/10"></div>
+                        <div class="flex items-center gap-1.5">
+                            <span class="text-amber-500 text-[13px]">★★★★★</span>
+                            <span class="text-[13px] font-semibold text-gray-900">1,000+</span>
+                            <span class="text-[13px] text-gray-500">travelers helped</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="absolute bottom-24 right-36 text-3xl drop-shadow-lg">
-                    🩺
+
+                <div class="inline-flex items-center gap-3 bg-white border border-black/8 rounded-full px-2 py-2 md:hidden max-w-fit">
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold z-[5]">AK</div>
+                        <div class="w-8 h-8 rounded-full bg-green-100 text-green-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold -ml-2.5 z-[4]">SR</div>
+                        <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold -ml-2.5 z-[3]">MJ</div>
+                        <div class="w-8 h-8 rounded-full bg-red-100 text-red-800 border-2 border-white flex items-center justify-center text-[11px] font-semibold -ml-2.5 z-[2]">PL</div>
+                        <div class="w-8 h-8 rounded-full bg-gray-100 text-gray-500 border-2 border-white flex items-center justify-center text-[10px] font-semibold -ml-2.5 z-[1]">+9k</div>
+                    </div>
+                    <div class="w-px h-5 bg-black/10"></div>
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-amber-500 text-[13px]">★★★★★</span>
+                        <span class="text-[13px] font-semibold text-gray-900">1,000+</span>
+                        <span class="text-[13px] text-gray-500">travelers helped</span>
+                    </div>
                 </div>
+
+                <div class="w-full md:hidden lg:block" id="testimonialCard">
+                    <div class="bg-white border border-slate-200 rounded-2xl px-3 py-5 w-full">
+                        
+                        <!-- Top row: avatar + stars -->
+                        <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div id="t-avatar" class="w-12 h-12 rounded-full flex items-center justify-center text-sm font-semibold shrink-0 bg-blue-100 text-blue-900">AK</div>
+                            <div>
+                            <span id="t-name" class="text-sm font-semibold text-slate-800 block">Anika K.</span>
+                            <span id="t-loc" class="text-xs text-slate-400">· Tourist from Germany</span>
+                            </div>
+                        </div>
+                        <span class="text-amber-500 text-base">★★★★★</span>
+                        </div>
+
+                        <!-- Big decorative quote mark -->
+                        <div class="text-6xl text-slate-200 font-serif leading-none mb-0">"</div>
+
+                        <!-- Quote text -->
+                        <p id="t-quote" class="text-lg text-slate-700 leading-relaxed pb-4">
+                        Found an English-speaking doctor in Jaipur within 2 minutes. Absolute lifesaver during my solo trip.
+                        </p>
+
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="flex gap-1.5 mt-2.5 pl-1" id="t-dots"></div>
+                </div>
+
+                
+
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN — map card, unchanged -->
+        <div id="mainCard" class="hidden lg:block lg:w-[450px] lg:bg-white lg:shadow-xl lg:rounded-t-3xl rounded-b-3xl lg:overflow-hidden">
+            <div class="relative h-[320px] bg-gradient-to-br from-[#E8ECEF] to-[#DDE7E2] overflow-hidden">
+                <div class="absolute top-48 left-20 drop-shadow-xl animate-[float_3s_ease-in-out_infinite]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7z" fill="#2563EB"/>
+                        <circle cx="12" cy="9" r="4" fill="white"/>
+                        <path d="M11 7.5h2v1.5h1.5v2H13V12.5h-2V11H9.5v-2H11V7.5z" fill="#2563EB"/>
+                    </svg>
+                </div>
+                <div class="absolute top-20 left-36 text-2xl drop-shadow-lg">📍</div>
+                <div class="absolute top-16 right-32 text-2xl drop-shadow-lg">💊</div>
+                <div class="absolute bottom-24 right-36 text-3xl drop-shadow-lg">🩺</div>
                 <div class="absolute top-10 left-10 bg-white px-2 py-1 rounded-xl shadow-xl">
-                    <p class="font-semibold text-md">
-                        🏥 Apollo Hospital — 0.4 km
-                    </p>
+                    <p class="font-semibold text-md">🏥 Apollo Hospital — 0.4 km</p>
                 </div>
-                
                 <div class="absolute inset-0 opacity-50 bg-[linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] bg-[size:64px_64px]"></div>
-
-                
-
             </div>
             <div>
                 <div class="flex flex-row">
-                    <div class="p-4 m-3 rounded-xl  bg-[#F3E6E3]">
-                        🩺
-                    </div>
+                    <div class="p-4 m-3 rounded-xl bg-[#F3E6E3]">🩺</div>
                     <div class="flex flex-col pt-4">
-                        <p class="font-semibold">
-                            Dr. Priya Sharma
-                        </p>
-                        <p class="text-slate-500">
-                            General Physician · English
-                        </p>
-
-                    </div>   
-                    <div class="p-0 pt-[20px] ml-[110px]  text-sm">
+                        <p class="font-semibold">Dr. Priya Sharma</p>
+                        <p class="text-slate-500">General Physician · English</p>
+                    </div>
+                    <div class="p-0 pt-[20px] ml-[110px] text-sm">
                         <p>0.4 km</p>
                         <p class="text-slate-500">⭐ 4.9</p>
                     </div>
                 </div>
                 <div class="w-[400px] mx-6 border-t border-slate-300"></div>
                 <div class="flex flex-row">
-                    <div class="p-4 m-3 rounded-xl  bg-[#EAF4F0]">
-                        🫀
-                    </div>
+                    <div class="p-4 m-3 rounded-xl bg-[#EAF4F0]">🫀</div>
                     <div class="flex flex-col pt-4">
-                        <p class="font-semibold">
-                            Dr. Rahul Iyer
-                        </p>
-                        <p class="text-slate-500">
-                            Cardiologist · Hindi, Tamil
-                        </p>
-
-                    </div>   
-                    <div class="p-2 pt-[20px] ml-[110px]  text-sm">
+                        <p class="font-semibold">Dr. Rahul Iyer</p>
+                        <p class="text-slate-500">Cardiologist · Hindi, Tamil</p>
+                    </div>
+                    <div class="p-2 pt-[20px] ml-[110px] text-sm">
                         <p class="px-1.5">1.1 km</p>
                         <p class="bg-[#9cf0ca] p-1 w-14 text-center rounded-2xl text-[#198b58] font-semibold">open</p>
                     </div>
                 </div>
                 <div class="w-[400px] mx-6 border-t border-slate-300"></div>
                 <div class="flex flex-row">
-                    <div class="p-4 m-3 rounded-xl  bg-[#E4E8EE]">
-                        💊
-                    </div>
+                    <div class="p-4 m-3 rounded-xl bg-[#E4E8EE]">💊</div>
                     <div class="flex flex-col pt-4">
-                        <p class="font-semibold">
-                            MedPlus Pharmacy
-                        </p>
-                        <p class="text-slate-500">
-                            24/7 · All medications
-                        </p>
-
-                    </div>   
-                    <div class="p-2 pl-9 pt-[20px] ml-[110px]  text-sm">
+                        <p class="font-semibold">MedPlus Pharmacy</p>
+                        <p class="text-slate-500">24/7 · All medications</p>
+                    </div>
+                    <div class="p-2 pl-9 pt-[20px] ml-[110px] text-sm">
                         <p class="px-1.5">1.1 km</p>
                         <p class="bg-[#9cf0ca] p-1 w-14 text-center rounded-2xl text-[#198b58] font-semibold">open</p>
                     </div>
                 </div>
             </div>
-
-
         </div>
-        <!-- <div class=" max-w-32  flex items-center justify-center  font-sans font-medium lg:hidden">
-            <button class="  border-gray-400 hover:bg-slate-100 hover:border-slate-800 hover:border-solid hover:border-2 border-dotted border-2 p-1 rounded-2xl lg:hidden">
-                Learn More
-            </button>
-        </div> -->
-         
+
     </div>
 
+    <!-- STATS -->
     <div id="statsArea" class="w-full mt-6">
-
-  <!-- Horizontal divider with padding on both ends -->
-  <div class="px-6 md:px-12 lg:px-16">
-    <div class="border-t border-slate-300 w-full"></div>
-  </div>
-
-  <!-- Stats row -->
-  <div class="flex items-center justify-between w-full pt-2">
-
-    <!-- Stat 1 -->
-    <div class="flex items-center gap-2 px-4 py-3 md:px-12 md:py-4 lg:px-16 flex-1 justify-center">
-      <h1 class="font-custom font-bold text-xl md:text-2xl lg:text-4xl text-slate-900">
-        2,400+
-      </h1>
-      <div class="text-xs md:text-sm lg:text-lg text-slate-500 leading-tight">
-        <p>Verified</p>
-        <p>providers</p>
-      </div>
+        <div class="px-6 md:px-12 lg:px-16">
+            <div class="border-t border-slate-300 w-full"></div>
+        </div>
+        <div class="flex items-center justify-between w-full pt-2">
+            <div class="flex items-center gap-2 px-4 py-3 md:px-12 md:py-4 lg:px-16 flex-1 justify-center">
+                <h1 class="font-custom font-bold text-xl md:text-2xl lg:text-4xl text-slate-900">2,400+</h1>
+                <div class="text-xs md:text-sm lg:text-lg text-slate-500 leading-tight">
+                    <p>Verified</p><p>providers</p>
+                </div>
+            </div>
+            <div class="self-stretch w-px bg-slate-300 my-3"></div>
+            <div class="flex items-center gap-2 px-4 py-3 md:px-12 md:py-4 lg:px-16 flex-1 justify-center">
+                <h1 class="font-custom font-bold text-xl md:text-2xl lg:text-4xl text-slate-900">180+</h1>
+                <div class="text-xs md:text-sm lg:text-lg text-slate-500 leading-tight">
+                    <p>Cities</p><p>covered</p>
+                </div>
+            </div>
+            <div class="self-stretch w-px bg-slate-300 my-3"></div>
+            <div class="flex items-center gap-2 px-6 py-3 md:px-12 md:py-4 lg:px-16 flex-1 justify-center">
+                <h1 class="font-custom font-bold text-xl md:text-2xl lg:text-4xl text-slate-900">24/7</h1>
+                <div class="text-xs md:text-sm lg:text-lg text-slate-500 leading-tight">
+                    <p>Emergency</p><p>support</p>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Divider -->
-    <div class="self-stretch w-px bg-slate-300 my-3"></div>
-
-    <!-- Stat 2 -->
-    <div class="flex items-center gap-2 px-4 py-3 md:px-12 md:py-4 lg:px-16 flex-1 justify-center">
-      <h1 class="font-custom font-bold text-xl md:text-2xl lg:text-4xl text-slate-900">
-        180+
-      </h1>
-      <div class="text-xs md:text-sm lg:text-lg text-slate-500 leading-tight">
-        <p>Cities</p>
-        <p>covered</p>
-      </div>
-    </div>
-
-    <!-- Divider -->
-    <div class="self-stretch w-px bg-slate-300 my-3"></div>
-
-    <!-- Stat 3 -->
-    <div class="flex items-center gap-2 px-6 py-3 md:px-12 md:py-4 lg:px-16 flex-1 justify-center">
-      <h1 class="font-custom font-bold text-xl md:text-2xl lg:text-4xl text-slate-900">
-        24/7
-      </h1>
-      <div class="text-xs md:text-sm lg:text-lg text-slate-500 leading-tight">
-        <p>Emergency</p>
-        <p>support</p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-    
-    
-
-    
 
     <script src="script.js"></script>
+
+
 </body>
 </html>
