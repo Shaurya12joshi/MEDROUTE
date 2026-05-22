@@ -11,6 +11,9 @@ module.exports = {
       fontFamily:{
         'custom':[
           "Iserif" , "Instrument Serif", "serif"
+        ],
+        'custom2':[
+          "Montserrat", "sans-serif"
         ]
       }
     },
