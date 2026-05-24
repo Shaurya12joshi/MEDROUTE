@@ -108,13 +108,13 @@ let timerMd;
 const dotsElMd = document.getElementById('t-dotsMd');
 
 testimonialsMd.forEach((_, i) => {
-    const dMd = document.createElement('button'); // ✅ valid tag
+    const dMd = document.createElement('button'); 
     dMd.className = `h-1.5 rounded-full transition-all duration-200 ${i === 0 ? 'w-4 bg-[#D0423A]' : 'w-1.5 bg-slate-300'}`;
     dMd.addEventListener('click', () => { clearInterval(timerMd); showMd(i); startTimerMd(); }); // ✅ correct refs
     dotsElMd.appendChild(dMd);
 });
 
-function showMd(i) { // ✅ renamed
+function showMd(i) { // 
     currentMd = i;
     const tMd = testimonialsMd[i];
     const avMd = document.getElementById('t-avatarMd');
@@ -123,13 +123,31 @@ function showMd(i) { // ✅ renamed
     document.getElementById('t-quoteMd').textContent = tMd.quote;
     document.getElementById('t-nameMd').textContent = tMd.name;
     document.getElementById('t-locMd').textContent = '· ' + tMd.loc;
-    dotsElMd.querySelectorAll('button').forEach((dMd, idx) => { // ✅ correct container + tag
+    dotsElMd.querySelectorAll('button').forEach((dMd, idx) => { 
         dMd.className = `h-1.5 rounded-full transition-all duration-200 ${idx === i ? 'w-4 bg-[#D0423A]' : 'w-1.5 bg-slate-300'}`;
     });
 }
 
-function startTimerMd() { // ✅ renamed
+function startTimerMd() { // 
     timerMd = setInterval(() => showMd((currentMd + 1) % testimonialsMd.length), 3500);
 }
 
 startTimerMd();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    btn.textContent = 'Saving your spot...';
+    btn.disabled = true;
+    btn.classList.add('opacity-60');
+    setTimeout(() => {
+      document.getElementById('waitlistForm').classList.add('hidden');
+      const msg = document.getElementById('successMsg');
+      msg.classList.remove('hidden');
+      msg.style.opacity = '0';
+      setTimeout(() => {
+        msg.style.transition = 'opacity 0.4s ease';
+        msg.style.opacity = '1';
+      }, 50);
+    }, 1000);
+  }
